@@ -2,7 +2,7 @@ package com.swsn.messingaround3
 
 class ColorSquare(center: (Int,Int), size: Int, var color: (Int,Int,Int))
   extends Square(center,size) with HasColor {
-  override def mkString(term: String): String = s"Square of size $size at $center with color r:$red g:$green b: $blue$term"
+  override def toString: String = s"Square of size $size at $center with color r:$red g:$green b: $blue"
 }
 
 object ColorSquare {

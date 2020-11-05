@@ -2,7 +2,7 @@ package com.swsn.messingaround3
 
 class ColorTriangle(center: (Int,Int), rotation: Int, size: Int, var color:(Int,Int,Int))
   extends Triangle(center, rotation, size) with HasColor {
-  override def mkString(term: String): String = f"Triangle of side size $size rotation $rotation at $center with color r:$red g:$green b: $blue$term"
+  override def toString: String = f"Triangle of side size $size rotation $rotation at $center with color r:$red g:$green b: $blue"
 }
 
 object ColorTriangle {

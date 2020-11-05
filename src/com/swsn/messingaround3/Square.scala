@@ -1,7 +1,7 @@
 package com.swsn.messingaround3
 
 class Square(center: (Int,Int), size: Int) extends Shape(center, size) {
-  override def mkString(term: String): String = s"Square of size $size at $center$term"
+  override def toString: String = s"Square of size $size at $center"
 }
 
 object Square{

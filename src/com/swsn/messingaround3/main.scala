@@ -1,6 +1,7 @@
 package com.swsn.messingaround3
 
 object main extends App {
+  implicit def Double2Float(x: Double): Float = x.toFloat
   val a = ColorTriangle(center=(0,0), rotation=30, size=25, color=(20,20, 120))
 
   a.setColor(100,0,70)
